@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RICARDO MUNHOZ MONTANHA - Pesquisa Genealógica e Assessoria</title>
+    <title>RICARDO MONTANHA - Pesquisa Genealógica e Assessoria</title>
     <style>
         body {
             margin: 0;
@@ -12,6 +12,9 @@
             background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url('https://source.unsplash.com/1920x1080/?immigration,legal') no-repeat center center/cover;
         }
         header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             background-color: rgba(0, 0, 0, 0.7);
             padding: 20px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -26,6 +29,22 @@
             font-size: 1.2rem;
             margin: 5px 0 0;
             opacity: 0.9;
+        }
+        .language-buttons {
+            display: flex;
+            gap: 10px;
+        }
+        .language-buttons a {
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            color: white;
+            background-color: #f5a623;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .language-buttons a:hover {
+            background-color: #d48a1f;
         }
         .highlight {
             background-color: #f5a623;
@@ -86,6 +105,10 @@
         footer a:hover {
             text-decoration: underline;
         }
+        .separator {
+            border-top: 2px solid #f5a623;
+            margin: 40px 0;
+        }
         @media (min-width: 768px) {
             section {
                 padding: 80px 40px;
@@ -101,27 +124,62 @@
 </head>
 <body>
     <header>
-        <h1>RICARDO MUNHOZ MONTANHA</h1>
-        <p>Pesquisa Genealógica e Assessoria Especializada</p>
+        <div>
+            <h1>RICARDO MONTANHA</h1>
+            <p>Pesquisa Genealógica e Assessoria Especializada</p>
+        </div>
+        <div class="language-buttons">
+            <a href="#pt">PT</a>
+            <a href="#en">EN</a>
+            <a href="#es">ES</a>
+        </div>
     </header>
-    <section>
+    <section id="pt">
         <h2>Nossos Serviços</h2>
         <p><strong>Pesquisa Genealógica:</strong> Comprovamos sua ascendência para fins históricos ou legais.</p>
         <p><strong>Assessoria de Cidadania:</strong> Consultoria para nacionalidade portuguesa, espanhola e italiana.</p>
         <p><strong>Imigração Legal:</strong> Acompanhamento em processos de regularização e residência.</p>
         <p><strong>Traduções e Legalizações:</strong> Traduções juramentadas e assistência em legalizações de documentos.</p>
         <div class="highlight">
-            Primeira Consulta Gratuita, Orçamento Sem Compromisso e Pré-Análise Grátis da Sua Documentação!
+            Primeira Consulta e Análise Grátis da sua Documentação - Orçamento sem Compromisso
         </div>
         <div class="cta">
             <a href="https://wa.link/ueekl0">Solicite Sua Análise Gratuita!</a>
         </div>
     </section>
+    <div class="separator"></div>
+    <section id="en">
+        <h2>Our Services</h2>
+        <p><strong>Genealogical Research:</strong> We verify your ancestry for historical or legal purposes.</p>
+        <p><strong>Citizenship Assistance:</strong> Consulting for Portuguese, Spanish, and Italian citizenship.</p>
+        <p><strong>Legal Immigration:</strong> Support in regularization and residency processes.</p>
+        <p><strong>Translations and Legalizations:</strong> Sworn translations and assistance with document legalizations.</p>
+        <div class="highlight">
+            Free First Consultation and Documentation Analysis - No-Obligation Quote
+        </div>
+        <div class="cta">
+            <a href="https://wa.link/ueekl0">Request Your Free Analysis!</a>
+        </div>
+    </section>
+    <div class="separator"></div>
+    <section id="es">
+        <h2>Nuestros Servicios</h2>
+        <p><strong>Investigación Genealógica:</strong> Verificamos su ascendencia con fines históricos o legales.</p>
+        <p><strong>Asesoría de Ciudadanía:</strong> Consultoría para nacionalidad portuguesa, española e italiana.</p>
+        <p><strong>Inmigración Legal:</strong> Apoyo en procesos de regularización y residencia.</p>
+        <p><strong>Traducciones y Legalizaciones:</strong> Traducciones juradas y asistencia en legalización de documentos.</p>
+        <div class="highlight">
+            Primera Consulta y Análisis Gratuito de su Documentación - Presupuesto sin Compromiso
+        </div>
+        <div class="cta">
+            <a href="https://wa.link/ueekl0">¡Solicite su Análisis Gratuito!</a>
+        </div>
+    </section>
     <footer>
-        <p>&copy; 2025 RICARDO MUNHOZ MONTANHA. Todos os direitos reservados.</p>
-        <p>Contacte-nos: <a href="mailto:ricardomontanh@gmail.com">ricardomontanh@gmail.com</a></p>
-        <p>Telefone | WhatsApp: +351 925 368 511</p>
-        <p>Sediado em Portugal</p>
+        <p>&copy; 2025 RICARDO MONTANHA. All rights reserved.</p>
+        <p>Contact us: <a href="mailto:ricardomontanh@gmail.com">ricardomontanh@gmail.com</a></p>
+        <p>Phone | WhatsApp: +351 925 368 511</p>
+        <p>Based in Portugal</p>
     </footer>
 </body>
 </html>
