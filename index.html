@@ -7,39 +7,70 @@
     <style>
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             color: white;
-            text-align: center;
-            background: url('https://source.unsplash.com/1920x1080/?immigration,legal') no-repeat center center/cover;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url('https://source.unsplash.com/1920x1080/?immigration,legal') no-repeat center center/cover;
         }
         header {
-            background-color: rgba(0, 0, 0, 0.6);
+            background-color: rgba(0, 0, 0, 0.7);
             padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
         header h1 {
             margin: 0;
-            font-size: 2.5rem;
+            font-size: 3rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        header p {
+            font-size: 1.2rem;
+            margin: 5px 0 0;
+            opacity: 0.9;
         }
         section {
-            padding: 50px 20px;
-            background-color: rgba(0, 0, 0, 0.7);
+            padding: 60px 20px;
+            text-align: center;
         }
         section h2 {
-            font-size: 2rem;
-            margin-bottom: 20px;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            color: #f5a623;
         }
         section p {
-            font-size: 1.2rem;
-            line-height: 1.6;
-            margin: 10px 0;
+            font-size: 1.3rem;
+            line-height: 1.8;
+            margin: 15px 0;
+        }
+        section p strong {
+            color: #f5a623;
         }
         footer {
-            background-color: rgba(0, 0, 0, 0.8);
-            padding: 10px;
-            font-size: 0.9rem;
+            background-color: rgba(0, 0, 0, 0.9);
+            padding: 20px;
+            font-size: 1rem;
+            text-align: center;
         }
         footer p {
             margin: 5px 0;
+        }
+        footer a {
+            color: #f5a623;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        @media (min-width: 768px) {
+            section {
+                padding: 80px 40px;
+            }
+            section h2 {
+                font-size: 3rem;
+            }
+            section p {
+                font-size: 1.5rem;
+            }
         }
     </style>
 </head>
