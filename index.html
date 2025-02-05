@@ -13,10 +13,9 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: white;
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), 
-                        url('https://source.unsplash.com/1920x1080/?immigration,legal') no-repeat center center/cover;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            background: #f8f9fa;
             margin: 0;
             width: 100%;
             overflow-x: hidden;
@@ -26,21 +25,16 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background-color: rgba(0, 0, 0, 0.7);
+            background-color: #004b87;
             padding: 15px 20px;
+            color: white;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
         header h1 {
             font-size: 2rem;
-            letter-spacing: 2px;
             text-transform: uppercase;
             line-height: 1.2;
-        }
-
-        .language-buttons {
-            display: flex;
-            gap: 10px;
         }
 
         .language-buttons a {
@@ -48,85 +42,74 @@
             padding: 8px 15px;
             font-size: 0.9rem;
             color: white;
-            background-color: #f5a623;
+            background-color: #00843D;
             border-radius: 5px;
             font-weight: bold;
+            transition: background 0.3s;
         }
 
         .language-buttons a:hover {
-            background-color: #d48a1f;
+            background-color: #00672b;
         }
 
         section {
-            padding: 40px 20px;
+            padding: 60px 20px;
             text-align: center;
+            background: white;
+            margin: 20px auto;
+            max-width: 900px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
 
         section h2 {
-            font-size: 2rem;
+            font-size: 2.5rem;
             margin-bottom: 20px;
-            text-transform: uppercase;
-            color: #f5a623;
+            color: #004b87;
         }
 
         section p {
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             line-height: 1.8;
             margin: 15px 0;
-        }
-
-        section p strong {
-            color: #f5a623;
+            color: #555;
         }
 
         .highlight {
-            background-color: #f5a623;
-            color: black;
-            padding: 10px;
-            border-radius: 5px;
+            background-color: #00843D;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
             display: inline-block;
             font-weight: bold;
             margin: 20px 0;
-            font-size: 1rem;
-        }
-
-        .cta {
-            margin-top: 30px;
+            font-size: 1.1rem;
         }
 
         .cta a {
-            background-color: #f5a623;
-            color: black;
-            padding: 10px 20px;
+            background-color: #004b87;
+            color: white;
+            padding: 12px 24px;
             text-decoration: none;
-            font-size: 1rem;
+            font-size: 1.1rem;
             border-radius: 5px;
             font-weight: bold;
-            display: inline-block;
+            transition: background 0.3s;
         }
 
         .cta a:hover {
-            background-color: #d48a1f;
-        }
-
-        .separator {
-            border-top: 2px solid #f5a623;
-            margin: 30px 0;
+            background-color: #003366;
         }
 
         footer {
-            background-color: rgba(0, 0, 0, 0.9);
+            background-color: #004b87;
+            color: white;
             padding: 20px;
-            font-size: 0.9rem;
             text-align: center;
         }
 
-        footer p {
-            margin: 5px 0;
-        }
-
         footer a {
-            color: #f5a623;
+            color: #66c2ff;
             text-decoration: none;
         }
 
@@ -137,19 +120,6 @@
         @media (min-width: 768px) {
             header h1 {
                 font-size: 2.5rem;
-            }
-
-            section h2 {
-                font-size: 2.5rem;
-            }
-
-            section p {
-                font-size: 1.2rem;
-            }
-
-            .cta a {
-                font-size: 1.1rem;
-                padding: 12px 25px;
             }
         }
     </style>
@@ -172,7 +142,6 @@
         <p><strong>Pesquisa Genealógica:</strong> Comprovamos sua ascendência para fins históricos ou legais.</p>
         <p><strong>Assessoria de Cidadania:</strong> Consultoria para nacionalidade portuguesa, espanhola e italiana.</p>
         <p><strong>Imigração Legal:</strong> Acompanhamento em processos de regularização e residência.</p>
-        <p><strong>Traduções e Legalizações:</strong> Traduções juramentadas e assistência em legalizações de documentos.</p>
         <div class="highlight">
             Primeira Consulta e Análise Grátis da sua Documentação - Orçamento sem Compromisso
         </div>
@@ -181,39 +150,12 @@
         </div>
     </section>
 
-    <div class="separator"></div>
-
-    <section id="en">
-        <h2>Our Services</h2>
-        <p><strong>Genealogical Research:</strong> We verify your ancestry for historical or legal purposes.</p>
-        <p><strong>Citizenship Assistance:</strong> Consulting for Portuguese, Spanish, and Italian citizenship.</p>
-        <p><strong>Legal Immigration:</strong> Support in regularization and residency processes.</p>
-        <p><strong>Translations and Legalizations:</strong> Sworn translations and assistance with document legalizations.</p>
-        <div class="cta">
-            <a href="https://wa.me/351925368511">Request Your Free Analysis!</a>
-        </div>
-    </section>
-
-    <div class="separator"></div>
-
-    <section id="es">
-        <h2>Nuestros Servicios</h2>
-        <p><strong>Investigación Genealógica:</strong> Verificamos su ascendencia con fines históricos o legales.</p>
-        <p><strong>Asesoría de Ciudadanía:</strong> Consultoría para nacionalidad portuguesa, española e italiana.</p>
-        <p><strong>Inmigración Legal:</strong> Apoyo en procesos de regularización y residencia.</p>
-        <p><strong>Traducciones y Legalizaciones:</strong> Traducciones juradas y asistencia en legalización de documentos.</p>
-        <div class="cta">
-            <a href="https://wa.me/351925368511">¡Solicite su Análisis Gratuito!</a>
-        </div>
-    </section>
-
     <footer>
         <p>&copy; 2025 RICARDO MONTANHA. Todos os direitos reservados.</p>
         <p>Contato: <a href="mailto:ricardomontanh@gmail.com">ricardomontanh@gmail.com</a></p>
         <p>Telefone | WhatsApp: +351 925 368 511</p>
-        <p>Baseado em Portugal</p>
-        <p>Este site pode conter links para serviços de terceiros. Não nos responsabilizamos pelas práticas de privacidade ou pelo conteúdo desses serviços.</p>
         <p><a href="politica-privacidade.html">Política de Privacidade</a> | <a href="termos-de-uso.html">Termos de Uso</a></p>
     </footer>
 </body>
 </html>
+
