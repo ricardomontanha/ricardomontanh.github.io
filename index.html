@@ -19,7 +19,7 @@
                         url('https://source.unsplash.com/1920x1080/?immigration,legal') no-repeat center center/cover;
             margin: 0;
             width: 100%;
-            overflow-x: hidden; /* Evita rolagem lateral */
+            overflow-x: hidden;
         }
 
         header {
@@ -35,12 +35,6 @@
             font-size: 2rem;
             letter-spacing: 2px;
             text-transform: uppercase;
-            line-height: 1.2;
-        }
-
-        header p {
-            font-size: 1rem;
-            opacity: 0.9;
             line-height: 1.2;
         }
 
@@ -81,25 +75,6 @@
             margin: 15px 0;
         }
 
-        section p strong {
-            color: #f5a623;
-        }
-
-        .highlight {
-            background-color: #f5a623;
-            color: black;
-            padding: 10px;
-            border-radius: 5px;
-            display: inline-block;
-            font-weight: bold;
-            margin: 20px 0;
-            font-size: 1rem;
-        }
-
-        .cta {
-            margin-top: 30px;
-        }
-
         .cta a {
             background-color: #f5a623;
             color: black;
@@ -115,53 +90,9 @@
             background-color: #d48a1f;
         }
 
-        footer {
-            background-color: rgba(0, 0, 0, 0.9);
-            padding: 20px;
-            font-size: 0.9rem;
-            text-align: center;
-        }
-
-        footer p {
-            margin: 5px 0;
-        }
-
-        footer a {
-            color: #f5a623;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-
         .separator {
             border-top: 2px solid #f5a623;
             margin: 30px 0;
-        }
-
-        img {
-            max-width: 100%;
-            height: auto; /* Para manter a proporção */
-        }
-
-        @media (min-width: 768px) {
-            header h1 {
-                font-size: 2.5rem;
-            }
-
-            section h2 {
-                font-size: 2.5rem;
-            }
-
-            section p {
-                font-size: 1.2rem;
-            }
-
-            .cta a {
-                font-size: 1.1rem;
-                padding: 12px 25px;
-            }
         }
     </style>
 </head>
@@ -169,7 +100,6 @@
     <header>
         <div>
             <h1>RICARDO MONTANHA</h1>
-            <p>Pesquisa Genealógica e Assessoria Especializada</p>
         </div>
         <div class="language-buttons">
             <a href="#pt">PT</a>
@@ -177,26 +107,42 @@
             <a href="#es">ES</a>
         </div>
     </header>
+    
+    <!-- Secção em Português -->
     <section id="pt">
         <h2>Nossos Serviços</h2>
         <p><strong>Pesquisa Genealógica:</strong> Comprovamos sua ascendência para fins históricos ou legais.</p>
         <p><strong>Assessoria de Cidadania:</strong> Consultoria para nacionalidade portuguesa, espanhola e italiana.</p>
-        <p><strong>Imigração Legal:</strong> Acompanhamento em processos de regularização e residência.</p>
-        <p><strong>Traduções e Legalizações:</strong> Traduções juramentadas e assistência em legalizações de documentos.</p>
-        <div class="highlight">
-            Primeira Consulta e Análise Grátis da sua Documentação - Orçamento sem Compromisso
-        </div>
         <div class="cta">
-            <a href="https://wa.me/351925368511">Solicite Sua Análise Gratuita!</a>
+            <a href="https://wa.me/351925368511">Solicite sua Análise Gratuita!</a>
         </div>
     </section>
+    
     <div class="separator"></div>
-    <footer>
-        <p>&copy; 2025 RICARDO MONTANHA. Todos os direitos reservados.</p>
-        <p>Contacte-nos: <a href="mailto:ricardomontanh@gmail.com">ricardomontanh@gmail.com</a></p>
-        <p>Telefone | WhatsApp: +351 925 368 511</p>
-        <p>Baseado em Portugal</p>
-    </footer>
+    
+    <!-- Secção em Inglês -->
+    <section id="en">
+        <h2>Our Services</h2>
+        <p><strong>Genealogical Research:</strong> We verify your ancestry for historical or legal purposes.</p>
+        <p><strong>Citizenship Assistance:</strong> Consulting for Portuguese, Spanish, and Italian citizenship.</p>
+        <div class="cta">
+            <a href="https://wa.me/351925368511">Request Your Free Analysis!</a>
+        </div>
+    </section>
+    
+    <div class="separator"></div>
+    
+    <!-- Secção em Espanhol -->
+    <section id="es">
+        <h2>Nuestros Servicios</h2>
+        <p><strong>Investigación Genealógica:</strong> Verificamos su ascendencia con fines históricos o legales.</p>
+        <p><strong>Asesoría de Ciudadanía:</strong> Consultoría para nacionalidad portuguesa, española e italiana.</p>
+        <div class="cta">
+            <a href="https://wa.me/351925368511">¡Solicite su Análisis Gratuito!</a>
+        </div>
+    </section>
+
 </body>
 </html>
+
 
