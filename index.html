@@ -4,153 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RICARDO MONTANHA - Pesquisa Genealógica e Assessoria</title>
-    <style>
-        /* Reset básico */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Arial', sans-serif;
-            color: #333;
-            background: #f8f9fa;
-            margin: 0;
-            width: 100%;
-            overflow-x: hidden;
-        }
-
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #004b87;
-            padding: 15px 20px;
-            color: white;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        header h1 {
-            font-size: 2rem;
-            text-transform: uppercase;
-            line-height: 1.2;
-        }
-
-        .language-buttons a {
-            text-decoration: none;
-            padding: 8px 15px;
-            font-size: 0.9rem;
-            color: white;
-            background-color: #00843D;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: background 0.3s;
-        }
-
-        .language-buttons a:hover {
-            background-color: #00672b;
-        }
-
-        section {
-            padding: 60px 20px;
-            text-align: left;
-            background: white;
-            margin: 20px auto;
-            max-width: 900px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        section h2 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-            color: #004b87;
-            text-align: center;
-        }
-
-        section p {
-            font-size: 1.2rem;
-            line-height: 1.8;
-            margin: 15px 0;
-            color: #555;
-        }
-
-        .service-item {
-            font-size: 1.2rem;
-            font-weight: bold;
-            color: #004b87;
-            margin-top: 15px;
-        }
-
-        .highlight {
-            background-color: #00843D;
-            color: white;
-            padding: 15px;
-            border-radius: 8px;
-            display: inline-block;
-            font-weight: bold;
-            margin: 20px 0;
-            font-size: 1.1rem;
-            text-align: center;
-        }
-
-        .cta {
-            text-align: center;
-        }
-
-        .cta a {
-            background-color: #004b87;
-            color: white;
-            padding: 12px 24px;
-            text-decoration: none;
-            font-size: 1.1rem;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: background 0.3s;
-        }
-
-        .cta a:hover {
-            background-color: #003366;
-        }
-
-        footer {
-            background-color: #004b87;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-
-        footer a {
-            color: #66c2ff;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-
-        @media (min-width: 768px) {
-            header h1 {
-                font-size: 2.5rem;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div>
-            <h1>RICARDO MONTANHA</h1>
-            <p>Pesquisa Genealógica e Assessoria Especializada</p>
-        </div>
-        <div class="language-buttons">
-            <a href="#pt">PT</a>
-            <a href="#en">EN</a>
-            <a href="#es">ES</a>
-        </div>
+
+    <!-- Banner Superior -->
+    <header class="banner">
+        <h1>RICARDO MONTANHA</h1>
+        <p>Pesquisa Genealógica e Assessoria Especializada</p>
     </header>
 
-    <section id="pt">
+    <!-- Barra de Navegação -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+        <div class="language-selector">
+            <a href="index.html">Português</a> |
+            <a href="index-en.html">English</a> |
+            <a href="index-es.html">Español</a>
+        </div>
+    </nav>
+
+    <!-- Conteúdo da Página -->
+    <section>
         <h2>Nossos Serviços</h2>
         <p class="service-item">Pesquisa Genealógica:</p>
         <p>Comprovamos sua ascendência para fins históricos ou legais.</p>
@@ -174,5 +54,6 @@
         <p>Telefone | WhatsApp: +351 925 368 511</p>
         <p><a href="politica-privacidade.html">Política de Privacidade</a> | <a href="termos-de-uso.html">Termos de Uso</a></p>
     </footer>
+
 </body>
 </html>
