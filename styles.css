@@ -40,8 +40,7 @@ body {
 /* Barra de Navegação */
 .navbar {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
     background-color: #00a1e0;
     padding: 10px 20px;
 }
@@ -64,16 +63,26 @@ body {
     color: #f2f2f2;
 }
 
+/* Barra de Seleção de Idiomas */
+.language-bar {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    border-bottom: 2px solid #f2f2f2;
+}
+
 .language-selector a {
-    color: #ffffff;
+    color: #002e5d;
     text-decoration: none;
-    font-size: 0.9rem;
-    margin: 0 5px;
+    font-size: 1rem;
+    margin: 0 10px;
+    font-weight: bold;
     transition: color 0.3s;
 }
 
 .language-selector a:hover {
-    color: #f2f2f2;
+    color: #00a1e0;
 }
 
 /* Seção de Conteúdo */
@@ -157,19 +166,4 @@ footer a {
 
 footer a:hover {
     color: #66c2ff;
-}
-
-/* Responsividade */
-@media (min-width: 768px) {
-    .banner h1 {
-        font-size: 3rem;
-    }
-
-    .navbar ul li a {
-        font-size: 1.1rem;
-    }
-
-    .language-selector a {
-        font-size: 1rem;
-    }
 }
